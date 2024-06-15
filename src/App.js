@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import Signup from "./Components/Auth/Signup";
+import { Route, Routes } from "react-router-dom";
+import Homepage from "./Components/Homepage";
+import Login from './Components/Auth/Login'
+import TournamentApp from "./Components/TournamentApp";
+import Join from "./Components/Join";
+import Create from "./Components/Create";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/login" element={<Login />}/>
+        <Route path="/signup" element={<Signup />}/>
+        <Route path="/join" element={<Join />}/>
+        <Route path="/create" element={<Create />}/>
+        <Route path="/tournamentApp" element={<TournamentApp />}/>
+      </Routes>
     </div>
   );
 }

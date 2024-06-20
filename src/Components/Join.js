@@ -1,9 +1,12 @@
 import React from 'react'
+import ParticipantForm from './ParticipantForm'
 
 const Join = () => {
+
+
   return (
     <div>
-      Join an existing tournament here
+      <ParticipantForm />
     </div>
   )
 }

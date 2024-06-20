@@ -1,9 +1,10 @@
 import React from 'react'
+import Form from './Form'
 
 const Create = () => {
   return (
     <div>
-        Create a tournament here
+        <Form />
     </div>
   )
 }
